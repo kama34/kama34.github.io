@@ -70,6 +70,17 @@
   .section-title::after{
       display: block;
       content: '';
+      width: 3px;
+      height: 3px;
+      background-color: #006DFE;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all .8s ease 0.2s;
+  }
+  ._active.section-title::after{
+      display: block;
+      content: '';
       width: 253px;
       height: 3px;
       background-color: #006DFE;
@@ -77,6 +88,12 @@
       bottom: 0;
       left: 0;
   }
+
+  ._anim-show{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
 
   /* Header styles start */
 
@@ -171,6 +188,10 @@
 
         margin-bottom: 22px;
     }
+    .intro__title._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
     .intro__subtitle{
         font-size: 16px;
         line-height: 24px;
@@ -327,6 +348,8 @@
         text-decoration: none;
         background: url(../img/svg/arrow-ico.svg) no-repeat 100% center;
         padding-right: 59px;
+
+        transform: translate(-220%, 0px);
     }
     .places__view-all:hover, .places__view-all:focus{
         opacity: .65;
@@ -440,6 +463,7 @@
         text-decoration: none;
         background: url(../img/svg/arrow-ico.svg) no-repeat 100% center;
         padding-right: 59px;
+        transform: translate(220%, 0px);
     }
 
     .tour__more:hover, .tour__more:focus{
@@ -470,6 +494,16 @@
         display: flex;
         flex-direction: column;
         grid-column: span 2;
+    }
+
+    .top__card:nth-child(1), .top__card:nth-child(4){
+        transition: all .8s ease 0s;
+    }
+    .top__card:nth-child(2), .top__card:nth-child(5){
+        transition: all .8s ease .4s;
+    }
+    .top__card:nth-child(3), .top__card:nth-child(6){
+        transition: all .8s ease .8s;
     }
 
     .top__card-pic{
@@ -866,3 +900,16 @@
 
 
     /* Media styles end */
+
+
+    
+    ._anim-show._active,
+    ._active ._anim-show{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        
+    }
+    /*._anim-show ._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }*/
