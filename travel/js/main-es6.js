@@ -115,3 +115,37 @@ if (animItems.length > 0){
         animOnScroll();
     }, 300);
 }
+
+// Language change
+window.onload = function(){
+    if (window.location.href.indexOf("test") <= -1) {
+        const defaultLanguage = "ru"
+        const langEn_button = document.querySelector(".header__lang-en");
+        const langRu_button = document.querySelector(".header__lang-ru");
+        
+
+        
+        langEn_button.addEventListener("click", () => {
+            const langRu_elements = document.querySelectorAll(".lang-ru");
+            const langEn_elements = document.querySelectorAll(".lang-en");
+            const langElements_count = langEn_elements.length;
+            langEn_button.classList.add('lang_active');
+            langRu_button.classList.remove('lang_active');
+            for(var i = 0; i < langElements_count; i++){
+                langEn_elements[i].style.display = "inline-block";
+                langRu_elements[i].style.display = "none";
+            }
+        });
+        langRu_button.addEventListener("click", () => {
+            const langRu_elements = document.querySelectorAll(".lang-ru");
+            const langEn_elements = document.querySelectorAll(".lang-en");
+            const langElements_count = langEn_elements.length;
+            langRu_button.classList.add('lang_active');
+            langEn_button.classList.remove('lang_active');
+            for(var i = 0; i < langElements_count; i++){
+                langEn_elements[i].style.display = "none";
+                langRu_elements[i].style.display = "inline-block";
+            }
+        });
+    }
+}

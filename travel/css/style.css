@@ -108,13 +108,19 @@
   }
   .header__active{
       background: #0E1D28;
+      padding: 0;
   }
   .header__wrapper{
       display: flex;
       flex-wrap: wrap;
       align-items: flex-end;
       justify-content: space-between;
-      padding-top: 56px;
+      padding: 28px 0;
+  }
+  .header__logo{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
   }
   .header__list{
       display: flex;
@@ -163,6 +169,29 @@
 
   .burger__line_thrid{
       bottom: 0;
+  }
+
+  .header__lang{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 4px;
+  }
+  .header__lang-link{
+      color: white;
+      text-decoration: none;
+  }
+  .header__lang_switch-separator{
+      margin: 0 2px;
+      color: white;
+  }
+  .lang_active{
+      text-decoration: underline;
+  }
+  .lang-ru{
+      display: none;
+  }
+  .lang-en{
+      display: inline-block;
   }
 
     /* Header styles end */

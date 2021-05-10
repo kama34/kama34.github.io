@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Amazing places in Japan</title>
-    <meta name="description" content=""/>
+    <meta name="description" content="" />
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="./img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">    
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/reset.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -31,21 +31,32 @@
                         <img src="./img/svg/odigo-logo.svg" alt="Discover Amazing places in Japan"
                             class="header__logo-pic">
                     </a>
+                    <div class="header__lang">
+                        <a href="#!" class="header__lang-en header__lang-link lang_active">EN</a>
+                        <div class="header__lang_switch-separator">|</div>
+                        <a href="#!" class="header__lang-ru header__lang-link">RU</a>
+                    </div>
                 </div>
+
+
 
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#articles" class="header__link js-scroll">Articles</a>
+                            <a href="#articles" class="header__link js-scroll"><span class="lang-en">Articles</span>
+                                <span class="lang-ru">Статьи</span></a>
                         </li>
                         <li class="header__item">
-                            <a href="#locations" class="header__link js-scroll">Locations</a>
+                            <a href="#locations" class="header__link js-scroll"><span
+                                    class="lang-en">Locations</span><span class="lang-ru">Места</span></a>
                         </li>
                         <li class="header__item">
-                            <a href="#videos" class="header__link js-scroll">Videos</a>
+                            <a href="#videos" class="header__link js-scroll"><span class="lang-en">Videos</span><span
+                                    class="lang-ru">Видео</span></a>
                         </li>
                         <li class="header__item">
-                            <a href="#sign-in" class="header__link js-scroll">Sign in</a>
+                            <a href="#sign-in" class="header__link js-scroll"><span class="lang-en">Sign in</span><span
+                                    class="lang-ru">Войти</span></a>
                         </li>
                     </ul>
                     <div class="header__nav-close">
@@ -69,17 +80,26 @@
         <div class="intro _anim-items" id="sign-in">
             <div class="wrapper">
                 <h1 class="intro__title  _anim-show">
-                    Discover Amazing places in Japan
+                    <span class="lang-en">Discover Amazing places in Japan</span>
+                    <span class="lang-ru">Откройте для себя удивительные места в Японии</span>
                 </h1>
                 <p class="intro__subtitle  _anim-show">
-                    Japan is an island nation in the Pacific Ocean, famous for its densely populated cities, imperial palaces, national parks, temples and sanctuaries.
+                    <span class="lang-en">
+                        Japan is an island nation in the Pacific Ocean, famous for its densely populated cities,
+                        imperial palaces, national parks, temples and sanctuaries.
+                    </span>
+                    <span class="lang-ru">Япония – островное государство в Тихом океане, которое славится своими
+                        густонаселенными городами, императорскими дворцами, национальными парками, храмами и
+                        святилищами.</span>
                 </p>
                 <form class="search-form  _anim-show">
                     <fieldset class="search-form__wrapp">
                         <p class="search-form__info">
-                            <input type="text" name="user-like-to-do" class="search-form__field" placeholder="What would you like to do?">
-                            <input type="text" name="user-like-to-go" class="search-form__field" placeholder="Where would you like to go?">
-                            <button type="submit" class="search-form__submit"> search </button>
+                            <input type="text" name="user-like-to-do" class="search-form__field lang-en" placeholder="What would you like to do?">
+                            <input type="text" name="user-like-to-go" class="search-form__field lang-en" placeholder="Where would you like to go?">
+                            <input type="text" name="user-like-to-do" class="search-form__field lang-ru" placeholder="Чем бы Вы хотели заняться?">
+                            <input type="text" name="user-like-to-go" class="search-form__field lang-ru" placeholder="Куда бы вы поехали?">
+                            <button type="submit" class="search-form__submit"> <span class="lang-en">search</span><span class="lang-ru">поиск</span> </button>
                         </p>
                     </fieldset>
                 </form>
@@ -91,7 +111,9 @@
         <section class="benefits _anim-items">
             <div class="benefits__wrap _anim-show">
                 <h2 class="benefits__title">
-                    Benefits of Odigo
+                    <span class="lang-en">Benefits of Odigo</span>
+                    <span class="lang-ru">Преимущества Odigo</span>
+                </h2>
                 </h2>
                 <div class="benefits_cards">
                     <div class="benefits__card">
@@ -99,36 +121,59 @@
                             <img src="./img/svg/church-ico.svg" alt="Welcome to Odigo!" class="benefits__card-sumb">
                         </div>
                         <h3 class="benefits__card-title">
-                            Welcome to Odigo!
+                            <span class="lang-en">Welcome to Odigo!</span>
+                            <span class="lang-ru">Добро пожаловать в Ogido!</span>
                         </h3>
                         <p class="benefits__card-desc">
-                            Japan is an island nation in the Pacific Ocean, famous for its densely populated cities, imperial palaces, national parks, temples and sanctuaries.
+                            <span class="lang-en">Japan is an island nation in the Pacific Ocean, famous for its densely
+                                populated cities, imperial palaces, national parks, temples and sanctuaries.</span>
+                            <span class="lang-ru">Япония – островное государство в Тихом океане, которое славится своими
+                                густонаселенными городами, императорскими дворцами, национальными парками, храмами и
+                                святилищами.</span>
                         </p>
-                        <a href="https://aminoapps.com/c/homefeelings/page/blog/fakty-o-iaponii/mo6q_4XNckuRwRWMolx64M3aq2r2jP1JLj7" class="benefits__card-more">LEARN MORE</a>
+                        <a href="https://aminoapps.com/c/homefeelings/page/blog/fakty-o-iaponii/mo6q_4XNckuRwRWMolx64M3aq2r2jP1JLj7"
+                            class="benefits__card-more"><span class="lang-en">LEARN MORE</span>
+                            <span class="lang-ru">ЧИТАТЬ ДАЛЬШЕ</span></a>
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-pic">
-                            <img src="./img/svg/person-ico.svg" alt="Your Personal Japan Guide" class="benefits__card-sumb">
+                            <img src="./img/svg/person-ico.svg" alt="Your Personal Japan Guide"
+                                class="benefits__card-sumb">
                         </div>
                         <h3 class="benefits__card-title">
-                            Your Personal Japan Guide
+                            <span class="lang-en">Your Personal Japan Guide</span>
+                            <span class="lang-ru">Ваш личный гид по Японии</span>
                         </h3>
                         <p class="benefits__card-desc">
-                            Japan is an island nation in the Pacific Ocean, famous for its densely populated cities, imperial palaces, national parks, temples and sanctuaries.
+                            <span class="lang-en">Japan is an island nation in the Pacific Ocean, famous for its densely
+                                populated cities, imperial palaces, national parks, temples and sanctuaries.</span>
+                            <span class="lang-ru">Япония – островное государство в Тихом океане, которое славится своими
+                                густонаселенными городами, императорскими дворцами, национальными парками, храмами и
+                                святилищами.</span>
                         </p>
-                        <a href="https://aminoapps.com/c/homefeelings/page/blog/fakty-o-iaponii/mo6q_4XNckuRwRWMolx64M3aq2r2jP1JLj7" class="benefits__card-more">LEARN MORE</a>
+                        <a href="https://aminoapps.com/c/homefeelings/page/blog/fakty-o-iaponii/mo6q_4XNckuRwRWMolx64M3aq2r2jP1JLj7"
+                            class="benefits__card-more"><span class="lang-en">LEARN MORE</span>
+                            <span class="lang-ru">ЧИТАТЬ ДАЛЬШЕ</span></a>
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-pic">
-                            <img src="./img/svg/building-ico.svg" alt="Promoting Local Businesses" class="benefits__card-sumb">
+                            <img src="./img/svg/building-ico.svg" alt="Promoting Local Businesses"
+                                class="benefits__card-sumb">
                         </div>
                         <h3 class="benefits__card-title">
-                            Promoting Local Businesses
+                            <span class="lang-en">Promoting Local Businesses</span>
+                            <span class="lang-ru">Продвижение местного бизнеса</span>
                         </h3>
                         <p class="benefits__card-desc">
-                            Japan is an island nation in the Pacific Ocean, famous for its densely populated cities, imperial palaces, national parks, temples and sanctuaries.
+                            <span class="lang-en">Japan is an island nation in the Pacific Ocean, famous for its densely
+                                populated cities, imperial palaces, national parks, temples and sanctuaries.</span>
+                            <span class="lang-ru">Япония – островное государство в Тихом океане, которое славится своими
+                                густонаселенными городами, императорскими дворцами, национальными парками, храмами и
+                                святилищами.</span>
                         </p>
-                        <a href="https://aminoapps.com/c/homefeelings/page/blog/fakty-o-iaponii/mo6q_4XNckuRwRWMolx64M3aq2r2jP1JLj7" class="benefits__card-more">LEARN MORE</a>
+                        <a href="https://aminoapps.com/c/homefeelings/page/blog/fakty-o-iaponii/mo6q_4XNckuRwRWMolx64M3aq2r2jP1JLj7"
+                            class="benefits__card-more"><span class="lang-en">LEARN MORE</span>
+                            <span class="lang-ru">ЧИТАТЬ ДАЛЬШЕ</span></a>
                     </div>
                 </div>
             </div>
@@ -140,40 +185,55 @@
             <div class="wrapper-full">
                 <div class="places__caption">
                     <h2 class="places__title section-title _anim-items _anim-show">
-                        Get inspired for your next trip
+                        <span class="lang-en">Get inspired for your next trip</span>
+                        <span class="lang-ru">Получите вдохновение для следующей поездки</span>
                     </h2>
-                    <a href="https://www.tripzaza.com/ru/destinations/dostoprimechatelnosti-yaponii/" class="places__view-all _anim-items _anim-show">VIEW ALL</a>
+                    <a href="https://www.tripzaza.com/ru/destinations/dostoprimechatelnosti-yaponii/"
+                        class="places__view-all _anim-items _anim-show"><span class="lang-en">VIEW ALL</span><span class="lang-ru">ЧИТАТЬ ПОЛНОСТЬЮ</span></a>
                 </div>
 
                 <div class="places__cards">
 
                     <div class="places__card places__card_size_lg _anim-items _anim-show _anim-no-hide">
-                        <img src="./img/place-1-min.jpg" alt="Mount Fuji" class="places__card-pic places__card-pic_size_lg">
-                        <h3 class="places__card-title">Mount Fuji</h3>
+                        <img src="./img/place-1-min.jpg" alt="Mount Fuji"
+                            class="places__card-pic places__card-pic_size_lg">
+                        <h3 class="places__card-title"><span class="lang-en">Mount Fuji</span>
+                            <span class="lang-ru">Гора Фудзи</span>
+                        </h3>
                         <a href="https://wikiway.com/japan/gora-fudziyama/" class="places__card-link"></a>
                     </div>
-                    
+
                     <div class="places__card places__card_size_lg _anim-items _anim-show _anim-no-hide">
                         <img src="./img/place-2-min.jpg" alt="Kyoto" class="places__card-pic places__card-pic_size_lg">
-                        <h3 class="places__card-title">Kyoto</h3>
+                        <h3 class="places__card-title"><span class="lang-en">Kyoto</span>
+                            <span class="lang-ru">Киото</span>
+                        </h3>
                         <a href="https://wikiway.com/japan/kioto/" class="places__card-link"></a>
                     </div>
 
                     <div class="places__card places__card_size_sm _anim-items _anim-show _anim-no-hide">
                         <img src="./img/place-3-min.jpg" alt="Tokyo" class="places__card-pic places__card-pic_size_sm">
-                        <h3 class="places__card-title">Tokyo</h3>
+                        <h3 class="places__card-title"><span class="lang-en">Tokyo</span>
+                            <span class="lang-ru">Токио</span>
+                        </h3>
                         <a href="https://wikiway.com/japan/tokio/" class="places__card-link"></a>
                     </div>
 
                     <div class="places__card places__card_size_sm _anim-items _anim-show _anim-no-hide">
-                        <img src="./img/place-4-min.jpg" alt="Niigata" class="places__card-pic places__card-pic_size_sm">
-                        <h3 class="places__card-title">Niigata</h3>
+                        <img src="./img/place-4-min.jpg" alt="Niigata"
+                            class="places__card-pic places__card-pic_size_sm">
+                        <h3 class="places__card-title"><span class="lang-en">Niigata</span>
+                            <span class="lang-ru">Ниигата</span>
+                        </h3>
                         <a href="https://wikiway.com/japan/natsionalnyy-park-nikko/" class="places__card-link"></a>
                     </div>
 
                     <div class="places__card places__card_size_sm _anim-items _anim-show _anim-no-hide">
-                        <img src="./img/place-5-min.jpg" alt="Sapporo" class="places__card-pic places__card-pic_size_sm">
-                        <h3 class="places__card-title">Sapporo</h3>
+                        <img src="./img/place-5-min.jpg" alt="Sapporo"
+                            class="places__card-pic places__card-pic_size_sm">
+                        <h3 class="places__card-title"><span class="lang-en">Sapporo</span>
+                            <span class="lang-ru">Саппоро</span>
+                        </h3>
                         <a href="https://wikiway.com/japan/sapporo/" class="places__card-link"></a>
                     </div>
 
@@ -188,31 +248,54 @@
 
                 <div class="tours__tour tour">
                     <div class="tour__pic">
-                        <img src="./img/tour-1-min.jpg" alt="Prefecture in Focus: Tottori" class="tour__tumb _anim-items _anim-show">
+                        <img src="./img/tour-1-min.jpg" alt="Prefecture in Focus: Tottori"
+                            class="tour__tumb _anim-items _anim-show">
                     </div>
                     <div class="tour__info">
                         <h3 class="tour__title _anim-items _anim-show">
-                            Prefecture in Focus: Tottori
+                            <span class="lang-en">Prefecture in Focus: Tottori</span>
+                            <span class="lang-ru">В фокусе префектура: Тоттори</span>
                         </h3>
                         <p class="tour__desc _anim-items _anim-show">
-                            Tottori is a prefecture located in the Chugoku region on the island of Honshu, Japan. The area of ​​the prefecture is 3507.28 km², population - 574 301 people, population density - 163.75 people / km². The administrative center of the prefecture is the city of Tottori.
+                            <span class="lang-en">Tottori is a prefecture located in the Chugoku region on the island of
+                                Honshu, Japan. The area of ​​the prefecture is 3507.28 km², population - 574 301 people,
+                                population density - 163.75 people / km². The administrative center of the prefecture is
+                                the city of Tottori.</span>
+                            <span class="lang-ru">Тоттори — префектура, расположенная в регионе Тюгоку на острове Хонсю,
+                                Япония. Площадь префектуры составляет 3507,28 км², население — 574 301 человек,
+                                плотность населения — 163,75 чел./км². Административный центр префектуры — город
+                                Тоттори.</span>
                         </p>
-                        <a href="https://ru.jal.japantravel.com/тоттори/топ-10-мест-в-тоттори/56308" class="tour__more _anim-items _anim-show">VIEW PREFECTURE</a>
+                        <a href="https://ru.jal.japantravel.com/тоттори/топ-10-мест-в-тоттори/56308"
+                            class="tour__more _anim-items _anim-show"><span class="lang-en tour__more_text">VIEW
+                                PREFECTURE</span>
+                            <span class="lang-ru tour__more_text">СМОТРЕТЬ ПРЕФЕКТУРУ</span></a>
                     </div>
                 </div>
 
                 <div class="tours__tour tour">
                     <div class="tour__info">
                         <h3 class="tour__title _anim-items _anim-show">
-                            Featured Neighborhood: Kyoto’s Arashiyama
+                            <span class="lang-en">Featured Neighborhood: Kyoto’s Arashiyama</span>
+                            <span class="lang-ru">Рекомендуемый район: Арасияма в Киото.</span>
                         </h3>
                         <p class="tour__desc _anim-items _anim-show">
-                            It is difficult to describe the beauty of the beauty of this area and it turns out very hackneyed, but I will try as best I can.And so, the bamboo grove is located behind the Tenryuji temple, which we visited yesterday, and goes along the road to the Okochi Sanso villa
+                            <span class="lang-en">It is difficult to describe the beauty of the beauty of this area and
+                                it turns out very hackneyed, but I will try as best I can.And so, the bamboo grove is
+                                located behind the Tenryuji temple, which we visited yesterday, and goes along the road
+                                to the Okochi Sanso villa</span>
+                            <span class="lang-ru">Описывать красоты красоты этого района трудно и получается очень
+                                избито, но уж попробую как смогу, И так, бамбуковая роща находятся за храмом Тэнрюдзи,
+                                который мы посетили вчера, и идет вдоль дороги к вилле Окоти Сансо</span>
                         </p>
-                        <a href="https://wikiway.com/japan/kioto/" class="tour__more _anim-items _anim-show _anim-items">VIEW NEIGHBORHOOD</a>
+                        <a href="https://wikiway.com/japan/kioto/"
+                            class="tour__more _anim-items _anim-show _anim-items"><span
+                                class="lang-en tour__more_text">VIEW NEIGHBORHOOD</span>
+                            <span class="lang-ru tour__more_text">СМОТРЕТЬ ОКРЕСТНОСТЬ</span></a>
                     </div>
                     <div class="tour__pic tour__pic_mob-first">
-                        <img src="./img/tour-2-min.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__tumb _anim-items _anim-show">
+                        <img src="./img/tour-2-min.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama"
+                            class="tour__tumb _anim-items _anim-show">
                     </div>
                 </div>
 
@@ -224,7 +307,8 @@
         <section class="top _anim-items _anim-no-hide" id="locations">
             <div class="wrapper-full">
                 <h2 class="top__title section-title _anim-show _anim-items">
-                    Today top places to visit
+                    <span class="lang-en">Today top places to visit</span>
+                    <span class="lang-ru">Лучшие места для посещения сегодня</span>
                 </h2>
 
                 <div class="top__cards">
@@ -234,7 +318,8 @@
                             <img src="./img/top-pic-1-min.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    NAGOYA
+                                    <span class="lang-en">NAGOYA</span>
+                                    <span class="lang-ru">НАГОЯ</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">221</span>
@@ -246,17 +331,29 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Nagoya is the capital of the Japanese prefecture of Aichi, a large industrial and port city in the central part of the island of Honshu. The urban area of ​​Naka is famous for its museums and pachinko (slot machine) halls. The entertainment district of Sakae is also located here, where tourists are attracted by the "Sky Boat" Ferris wheel built into the building of the shopping center.
+                            <span class="lang-en">Nagoya is the capital of the Japanese prefecture of Aichi, a large
+                                industrial and port city in the central part of the island of Honshu. The urban area of
+                                ​​Naka is famous for its museums and pachinko (slot machine) halls. The entertainment
+                                district of Sakae is also located here, where tourists are attracted by the "Sky Boat"
+                                Ferris wheel built into the building of the shopping center.</span>
+                            <span class="lang-ru">Нагоя – столица японской префектуры Айти, крупный промышленный и
+                                портовый город в центральной части острова Хонсю. Городской район Нака славится своими
+                                музеями и залами патинко (игровых автоматов). Здесь же расположен развлекательный
+                                квартал Сакаэ, где туристов привлекает колесо обозрения "Небесная лодка", встроенное в
+                                здание торгового центра.</span>
                         </p>
-                        <a href="https://wikiway.com/japan/nagoya/" class="top__card-more">SEE MORE</a>
+                        <a href="https://wikiway.com/japan/nagoya/" class="top__card-more"><span class="lang-en">SEE
+                                MORE</span>
+                            <span class="lang-ru">СМОТРЕТЬ</span></a>
                     </div>
-                    
+
                     <div class="top__card _anim-show  ">
                         <div class="top__card-pic">
-                            <img src="./img/top-pic-2-min.jpg" alt="NANIIGATAGOYA" class="top__card-thumb">
+                            <img src="./img/top-pic-2-min.jpg" alt="NIIGATA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    NIIGATA
+                                    <span class="lang-en">NIIGATA</span>
+                                    <span class="lang-ru">НИИГАТА</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">221</span>
@@ -268,18 +365,29 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Niigaata is a city determined by the decree of the Japanese government, the administrative center of Niigata Prefecture. Founded on April 1, 1889. The area of ​​the city is 726.10 km², the population is 808 189 people, the population density is 1113.05 people / km². Niigata is a large port on the coast of the Sea of ​​Japan.
+                            <span class="lang-en">Niigaata is a city determined by the decree of the Japanese
+                                government, the administrative center of Niigata Prefecture. Founded on April 1, 1889.
+                                The area of ​​the city is 726.10 km², the population is 808 189 people, the population
+                                density is 1113.05 people / km². Niigata is a large port on the coast of the Sea of
+                                ​​Japan.</span>
+                            <span class="lang-ru">Ниигаата — город, определённый указом правительства Японии,
+                                административный центр префектуры Ниигата. Основан 1 апреля 1889 года. Площадь города
+                                составляет 726,10 км², население — 808 189 человек, плотность населения — 1113,05
+                                чел./км². Ниигата — крупный порт на побережье Японского моря.</span>
                         </p>
-                        <a href="https://wikiway.com/japan/natsionalnyy-park-nikko/" class="top__card-more">SEE MORE</a>
+                        <a href="https://wikiway.com/japan/natsionalnyy-park-nikko/" class="top__card-more"><span
+                                class="lang-en">SEE MORE</span>
+                            <span class="lang-ru">СМОТРЕТЬ</span></a>
                     </div>
 
                     <div class="top__card _anim-show ">
-                        
+
                         <div class="top__card-pic">
                             <img src="./img/top-pic-3-min.jpg" alt="OSAKA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    OSAKA
+                                    <span class="lang-en">OSAKA</span>
+                                    <span class="lang-ru">ОСАКА</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">221</span>
@@ -291,19 +399,29 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Osaka is a major port and commercial city on the island of the Japanese archipelago of Honshu, famous for its modern architecture, nightlife, cafes and eateries. The main historical attraction of the city is a 16th century samurai castle, which has undergone several reconstructions.
+                            <span class="lang-en">Osaka is a major port and commercial city on the island of the
+                                Japanese archipelago of Honshu, famous for its modern architecture, nightlife, cafes and
+                                eateries. The main historical attraction of the city is a 16th century samurai castle,
+                                which has undergone several reconstructions.</span>
+                            <span class="lang-ru">Осака – крупный портовый и торговый город на острове Японского
+                                архипелага Хонсю, который славится своей современной архитектурой, ночными заведениями,
+                                кафе и закусочными. Главная историческая достопримечательность города – самурайский
+                                замок XVI века, который претерпел несколько реконструкци
                         </p>
-                        
-                        <a href="https://wikiway.com/japan/osaka/" class="top__card-more">SEE MORE</a>
+
+                        <a href="https://wikiway.com/japan/osaka/" class="top__card-more"><span class="lang-en">SEE
+                                MORE</span>
+                            <span class="lang-ru">СМОТРЕТЬ</span></a>
                     </div>
 
                     <div class="top__card _anim-show ">
-                        
+
                         <div class="top__card-pic">
                             <img src="./img/top-pic-4-min.jpg" alt="SAITAMA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    SAITAMA
+                                    <span class="lang-en">SAITAMA</span>
+                                    <span class="lang-ru">САЙТАМА</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">221</span>
@@ -315,18 +433,33 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            The administrative center of Saitama Prefecture. The city is part of the metropolitan area of ​​Greater Tokyo. The area of ​​the city is 217.49 km² [1], the population is 1 250 928 people (August 1, 2014) [2], the population density is 5751.66 people / km². The city was formed on May 1, 2001 as a result of the unification of the cities of Urawa, Omiya [en] and Yono [en]. On April 1, 2005, the city of Iwatsuki was annexed to Saitama in the east. Saitama is a city designated by government decree from April 1, 2003.
+                            <span class="lang-en">The administrative center of Saitama Prefecture. The city is part of
+                                the metropolitan area of ​​Greater Tokyo. The area of ​​the city is 217.49 km² [1], the
+                                population is 1 250 928 people (August 1, 2014) [2], the population density is 5751.66
+                                people / km². The city was formed on May 1, 2001 as a result of the unification of the
+                                cities of Urawa, Omiya [en] and Yono [en]. On April 1, 2005, the city of Iwatsuki was
+                                annexed to Saitama in the east. Saitama is a city designated by government decree from
+                                April 1, 2003.</span>
+                            <span class="lang-ru">Административный центр префектуры Сайтама. Город входит в агломерацию
+                                Большого Токио. Площадь города составляет 217,49 км²[1], население — 1 250 928 человек
+                                (1 августа 2014)[2], плотность населения — 5751,66 чел./км². Город был образован 1 мая
+                                2001 года вследствие объединения городов Урава, Омия[en] и Йоно[en]. 1 апреля 2005 года
+                                к Сайтаме на востоке был присоединён город Ивацуки. Сайтама является городом,
+                                определённым указом правительства с 1 апреля 2003 года.</span>
                         </p>
-                        <a href="https://www.tripadvisor.ru/Attractions-g298180-Activities-Saitama_Saitama_Prefecture_Kanto.html" class="top__card-more">SEE MORE</a>
+                        <a href="https://www.tripadvisor.ru/Attractions-g298180-Activities-Saitama_Saitama_Prefecture_Kanto.html"
+                            class="top__card-more"><span class="lang-en">SEE MORE</span>
+                            <span class="lang-ru">СМОТРЕТЬ</span></a>
                     </div>
 
                     <div class="top__card _anim-show ">
-                        
+
                         <div class="top__card-pic">
                             <img src="./img/top-pic-5-min.jpg" alt="UENO" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    UENO
+                                    <span class="lang-en">UENO</span>
+                                    <span class="lang-ru">УЭНО</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">221</span>
@@ -338,18 +471,30 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Ueno is a traditional area with graceful Shinto shrines and Buddhist temples. On an island in Ueno Park, there is a 17th century temple of the goddess Benzanten. At the Tokyo National Museum, you can see old Japanese art, and at the National Museum of Western Art, you can see the work of Vincent Van Gogh and Pablo Picasso.
+                            <span class="lang-en">Ueno is a traditional area with graceful Shinto shrines and Buddhist
+                                temples. On an island in Ueno Park, there is a 17th century temple of the goddess
+                                Benzanten. At the Tokyo National Museum, you can see old Japanese art, and at the
+                                National Museum of Western Art, you can see the work of Vincent Van Gogh and Pablo
+                                Picasso.</span>
+                            <span class="lang-ru">Уэно – традиционный район с изящными синтоистскими святилищами и
+                                буддийскими храмами. На острове в парке Уэно находится храм богини Бэндзантэн,
+                                построенный в XVII веке. В Токийском национальном музее можно посмотреть на старинные
+                                японские произведения искусства, а в Национальном музее западного искусства – на работы
+                                Винсента Ван Гога и Пабло Пикассо.</span>
                         </p>
-                        <a href="https://wikiway.com/japan/tokio/rayony-tokio/" class="top__card-more">SEE MORE</a>
+                        <a href="https://wikiway.com/japan/tokio/rayony-tokio/" class="top__card-more"><span
+                                class="lang-en">SEE MORE</span>
+                            <span class="lang-ru">СМОТРЕТЬ</span></a>
                     </div>
 
                     <div class="top__card _anim-show ">
-                        
+
                         <div class="top__card-pic">
                             <img src="./img/top-pic-6-min.jpg" alt="SHIBUYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    SHIBUYA
+                                    <span class="lang-en">SHIBUYA</span>
+                                    <span class="lang-ru">СИБУЯ</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">221</span>
@@ -361,9 +506,16 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Shibuya is one of the 23 special wards in Tokyo. As of May 1, 2020, the population is 236 537 people, the population density is 15,654 people / km². The total area of ​​the district is 15.11 km².
+                            <span class="lang-en">Shibuya is one of the 23 special wards in Tokyo. As of May 1, 2020,
+                                the population is 236 537 people, the population density is 15,654 people / km². The
+                                total area of ​​the district is 15.11 km²</span>
+                            <span class="lang-ru">Сибуя — один из 23 специальных районов Токио. По состоянию на 1 мая
+                                2020 года население составляет 236 537 человек, плотность населения — 15,654 чел/км².
+                                Общая площадь района — 15,11 км²</span>
                         </p>
-                        <a href="https://wikiway.com/japan/tokio/" class="top__card-more">SEE MORE</a>
+                        <a href="https://wikiway.com/japan/tokio/" class="top__card-more"><span class="lang-en">SEE
+                                MORE</span>
+                            <span class="lang-ru">СМОТРЕТЬ</span></a>
                     </div>
 
                 </div>
@@ -387,60 +539,90 @@
         <div class="wrapper">
             <div class="footer__item">
                 <div class="footer__logo">
-                    <img src="./img/svg/odigo-logo-footer.svg" alt="Discover Amazing places in Japan" class="footer__logo-pic">
+                    <img src="./img/svg/odigo-logo-footer.svg" alt="Discover Amazing places in Japan"
+                        class="footer__logo-pic">
                 </div>
                 <nav class="footer__nav">
                     <ul class="footer__menu">
                         <li class="footer__menu-item">
-                            <h3 class="footer__menu-title">Company</h3>
+                            <h3 class="footer__menu-title"><span class="lang-en">Company</span>
+                                <span class="lang-ru">Компания</span>
+                            </h3>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="https://wikiway.com/o-nas/" class="footer__menu-link">About</a>
+                            <a href="https://wikiway.com/o-nas/" class="footer__menu-link"><span
+                                    class="lang-en">About</span>
+                                <span class="lang-ru">О нас</span></a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="https://wikiway.com/o-nas/" class="footer__menu-link">Mission</a>
+                            <a href="https://wikiway.com/o-nas/" class="footer__menu-link"><span
+                                    class="lang-en">Mission</span>
+                                <span class="lang-ru">Миссия</span></a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="https://wikiway.com/o-nas/" class="footer__menu-link">Implementation</a>
+                            <a href="https://wikiway.com/o-nas/" class="footer__menu-link"><span
+                                    class="lang-en">Implementation</span>
+                                <span class="lang-en">Карьера</span></a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="https://wikiway.com/o-nas/" class="footer__menu-link">Privacy Policy</a>
-                        </li>
-                    </ul>
-
-                    <ul class="footer__menu">
-                        <li class="footer__menu-item">
-                            <h3 class="footer__menu-title">Locations</h3>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="https://wikiway.com/japan/tokio/" class="footer__menu-link">Tokyo</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="https://wikiway.com/japan/kioto/" class="footer__menu-link">Kyoto</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="https://wikiway.com/japan/osaka/" class="footer__menu-link">Osaka</a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="https://wikiway.com/japan/khirosima/" class="footer__menu-link">Hiroshima</a>
+                            <a href="https://wikiway.com/o-nas/" class="footer__menu-link"><span class="lang-en">Privacy
+                                    Policy</span>
+                                <span class="lang-ru">Политика <br>конфиденциальности</span></a>
                         </li>
                     </ul>
 
                     <ul class="footer__menu">
                         <li class="footer__menu-item">
-                            <h3 class="footer__menu-title">Social Media</h3>
+                            <h3 class="footer__menu-title"><span class="lang-en">Locations</span>
+                                <span class="lang-ru">Места</span>
+                            </h3>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="https://ru-ru.facebook.com/WikiWayOrg" class="footer__menu-link">Facebook</a>
+                            <a href="https://wikiway.com/japan/tokio/" class="footer__menu-link"><span
+                                    class="lang-en">Tokyo</span>
+                                <span class="lang-ru">Токио</span></a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="https://twitter.com/wikiway" class="footer__menu-link">Twitter</a>
+                            <a href="https://wikiway.com/japan/kioto/" class="footer__menu-link"><span
+                                    class="lang-en">Kyoto</span>
+                                <span class="lang-ru">Киото</span></a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="https://vk.com/wikiway" class="footer__menu-link">Vk</a>
+                            <a href="https://wikiway.com/japan/osaka/" class="footer__menu-link"><span
+                                    class="lang-en">Osaka</span>
+                                <span class="lang-ru">Осака</span></a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="https://www.youtube.com/channel/UC8zmIZlC8ixVwncEK-why9g/videos?sort=dd&shelf_id=0" class="footer__menu-link">Youtube</a>
+                            <a href="https://wikiway.com/japan/khirosima/" class="footer__menu-link"><span
+                                    class="lang-en">Hiroshima</span>
+                                <span class="lang-ru">Хиросима</span></a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <h3 class="footer__menu-title"><span class="lang-en">Social Media</span>
+                                <span class="lang-ru">Социальные сети</span>
+                            </h3>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="https://ru-ru.facebook.com/WikiWayOrg" class="footer__menu-link"><span
+                                    class="lang-en">Facebook</span>
+                                <span class="lang-ru">Facebook</span></a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="https://twitter.com/wikiway" class="footer__menu-link"><span
+                                    class="lang-en">Twitter</span>
+                                <span class="lang-ru">Twitter</span></a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="https://vk.com/wikiway" class="footer__menu-link"><span class="lang-en">VK</span>
+                                <span class="lang-ru">Vk</span></a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="https://www.youtube.com/channel/UC8zmIZlC8ixVwncEK-why9g/videos?sort=dd&shelf_id=0"
+                                class="footer__menu-link"><span class="lang-en">Youtube</span>
+                                <span class="lang-ru">Youtube</span></a>
                         </li>
                     </ul>
                 </nav>
