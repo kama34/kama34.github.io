@@ -112,7 +112,7 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
   7. >>> Footer Style
 ----------------------------------------------------------------*/
 .ds-footer{ background-color: #000; padding: 120px 0; }
-.ds-footer section { padding-bottom: 97px; }
+/*.ds-footer section { padding-bottom: 97px; }*/
 .ds-footer section span{ color: rgba(255,255,255,0.5); text-transform: uppercase; font-weight: 700; font-size: 16px; letter-spacing: 1px; display: block; padding-bottom: 20px; }
 .ds-footer section  h4{ color: #FFF; font-size: 48px; font-weight: 700; }
 .ds-footer section p{ letter-spacing: 1.13px; color: #FFF; font-size: 18px; margin-bottom: 40px; }
